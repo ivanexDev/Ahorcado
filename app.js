@@ -23,6 +23,7 @@ function adivinar (){
     document.getElementById("colgado").innerHTML = `<img src="img/colgado04.jpg" alt="colgado"></img>`;
   }else{
   let letra = document.getElementById("letra").value
+  letra = letra.toLowerCase();
   document.getElementById("letra").value = ""
   let contador = 0;
   let errores = 0;
