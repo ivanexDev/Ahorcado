@@ -45,7 +45,7 @@ function adivinar (){
 // Elige una palabra al azar y separa las letras para transformarla en un Array con el metodo .split()
 
 function palabraIncognita(){
-  let palabras = ["canto","bosque","internet","silla","profesor"]
+  let palabras = ["perro","gato","raton","caballo","paloma","cerdo"]
   let palabraIncognita = palabras[Math.floor(Math.random()*palabras.length)]
   let palabraArray = palabraIncognita.split("")
   return palabraArray
