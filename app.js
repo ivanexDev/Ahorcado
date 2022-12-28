@@ -17,6 +17,9 @@ function colgando(){
 
 
 function adivinar (){
+  if(palabraArray === palabraGuion){
+    document.getElementById("errores").innerHTML = "Has Ganado!";
+  }
 
   if (errorGlobal >= 3){
     document.getElementById("errores").innerHTML = "Has Perdido";

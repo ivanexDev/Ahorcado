@@ -1,5 +1,8 @@
 body {
     font-family: 'IBM Plex Mono', monospace;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
@@ -55,7 +58,38 @@ button {
 }
 
 footer {
+    margin-top: auto;
     display: flex;
+    flex-direction: column;
+}
+
+.redes-sociales {
+    display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
+    height: 90px;
+}
+
+.img-sn {
+    margin: 4px;
+    width: 32px;
+    /* -webkit-filter: invert(100%);
+    filter: invert(100%); */
+}
+
+.linkedin {
+    width: 32px;
+}
+
+.mi-info {
+    align-self: center;
+}
+
+@media screen and (width <=412px) {
+
+    footer {
+        margin-top: 6.25rem;
+    }
+
 }
