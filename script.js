@@ -4,6 +4,7 @@ let mensaje = document.getElementById("errores");
 let winLose = document.getElementById("win-lose");
 let palabraPantalla = document.getElementById("palabra");
 let errores = 0;
+let winner = false;
 
 botonEnviar.addEventListener("click", adivinar);
 
@@ -55,7 +56,7 @@ function comparar(letra) {
 			console.log(palabraGuion);
 		} else {
 			error++;
-			if (error == palabraIncognita.length) {
+			if (error == palabraIncognita.length && !winner) {
 				errores++;
 				if (errores >= 4) {
 					imagen.innerHTML = `<img src="img/colgado04.jpg" alt="colgado"></img>`;
@@ -72,6 +73,7 @@ function comparar(letra) {
 	palabraPantalla.innerHTML = palabraGuion.join(" ");
 
 	if (palabraGuion.join() === palabraIncognita.join()) {
+		winner = true;
 		winLose.innerHTML = "Has Ganado!";
 	}
 }
