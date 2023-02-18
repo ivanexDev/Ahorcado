@@ -1,40 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="app.js"></script>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap" rel="stylesheet">
-    <title>Mi primera pagina web</title>
-</head>
-<body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap"
+			rel="stylesheet" />
+		<title>Mi primera pagina web</title>
+	</head>
+	<body>
+		<header><h1>El Ahorcado</h1></header>
+		<div class="container">
+			<div id="colgado"></div>
+			<p>
+				Este es el juego del ahorcado, se generara una palabra al azar y tienes
+				que intentar adivinarla. <br />
+				Debes ingresar letra por letras hasta descubrir la palabra completa
+			</p>
+			<p id="palabra"></p>
+			<p id="errores"></p>
+			<p id="win-lose"></p>
+			<!-- <textarea name="letraAdivinar" id="letra" cols="1" rows="1"></textarea> -->
+			<input type="text" id="letra" />
 
-    <header><h1>El Ahorcado</h1></header>
-    <div class="container">
-
-        <div id="colgado">
-
-        </div>
-        <p>Este es el juego del ahorcado, se generara una palabra al azar y tienes que intentar adivinarla. <br> Debes ingresar letra por letras hasta descubrir la palabra completa</p>
-        <p id="palabra"></p>
-        <p id="errores"></p>
-        <!-- <textarea name="letraAdivinar" id="letra" cols="1" rows="1"></textarea> -->
-        <input type="text" id="letra">
-        
-        <div class="botones">
-            <button onclick="adivinar()" type="button">Enviar</button>
-            <button onclick="location.reload()" type="button">Prueba con otra palabra</button>
-        </div>
-
-    </div>
-    <footer>
-        <div class="redes-sociales">
-            <a href="https://github.com/ivanexDev"><img class="img-sn" src="img/github-svgrepo-com.svg" alt="githublogo"></a>
-            <a href="#"><img class="img-sn linkedin" src="img/linkedin-svgrepo-com.svg" alt="linkedinlogo"></a>
-        </div>
-        <div class="mi-info">Creado por Iván Pereira</div>
-    </footer>
-</body>
-</html> 
+			<div class="botones">
+				<button id="enviar" type="button">Enviar</button>
+				<button onclick="location.reload()" type="button">
+					Prueba con otra palabra
+				</button>
+			</div>
+		</div>
+		<footer>
+			<div class="redes-sociales">
+				<a href="https://github.com/ivanexDev"
+					><img
+						class="img-sn"
+						src="img/github-svgrepo-com.svg"
+						alt="githublogo"
+				/></a>
+				<a href="#"
+					><img
+						class="img-sn linkedin"
+						src="img/linkedin-svgrepo-com.svg"
+						alt="linkedinlogo"
+				/></a>
+			</div>
+			<div class="mi-info">Creado por Iván Pereira</div>
+		</footer>
+	</body>
+	<script src="script.js"></script>
+</html>

@@ -55,6 +55,7 @@ button {
     border-style: dashed;
     font-size: 20px;
     padding: 10px;
+    cursor: pointer;
 }
 
 footer {
@@ -85,6 +86,7 @@ footer {
 .mi-info {
     align-self: center;
 }
+
 
 @media screen and (width <=412px) {
 
